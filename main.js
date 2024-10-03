@@ -47,9 +47,35 @@ console.log('<-------------->');
 console.log('<-------------->');
 
 // 4
-const group = (text) =>{
-    
+// const group = (text) =>{
+//     const toString = text.toString();
+//     const firstLetter = toString.charAt(0)
+//     return firstLetter
+// }
+// console.log(group(["antelope", "alligator", "bear", "cat", "cheetah"]));
+
+// 5
+// const nestedArr = (array) =>{
+//     const str = array.toString();
+//     const result = []
+//     for(let x of str){
+//         const ele = str[x];
+//         for(let y = 0; y < ele.length; y++){
+//             result.push(ele[y])
+//         }
+//     }
+//     return result;
+// }
+// console.log(nestedArr([[1, 2], [3, 4], [1, 2], [5]]));
+
+
+// 6 faqat name chiqarish
+const people = (info) =>{
+    const name = info.map((person) => person.name)
+    return name
 }
+console.log(people([{name: "John", age: 30}, {name: "Jane", age: 25}, {name: "Jack", age: 20}]));
+
 
 
 
