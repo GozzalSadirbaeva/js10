@@ -47,26 +47,33 @@ console.log('<-------------->');
 console.log('<-------------->');
 
 // 4
-// const group = (text) =>{
-//     const toString = text.toString();
-//     const firstLetter = toString.charAt(0)
-//     return firstLetter
-// }
-// console.log(group(["antelope", "alligator", "bear", "cat", "cheetah"]));
+const group = (text) =>{
+    const toString = text.toString();
+    const firstLetter = toString.charAt(0)
+    return firstLetter
+}
+console.log(group(["antelope", "alligator", "bear", "cat", "cheetah"]));
 
-// 5
-// const nestedArr = (array) =>{
-//     const str = array.toString();
-//     const result = []
-//     for(let x of str){
-//         const ele = str[x];
-//         for(let y = 0; y < ele.length; y++){
-//             result.push(ele[y])
-//         }
-//     }
-//     return result;
-// }
-// console.log(nestedArr([[1, 2], [3, 4], [1, 2], [5]]));
+console.log('<-------------->');
+console.log('<-------------->');
+
+
+// 5 duplicate arrayni o'chirish
+let chars = [];
+const nestedArr = (array) =>{
+    let a = array.flat();
+    a.forEach(element => {
+        if(!chars.includes(element)){
+            chars.push(element);
+        }
+    });
+    return chars
+}
+console.log(nestedArr([[1, 2], [3, 4], [1, 2], [5]]));
+
+console.log('<-------------->');
+console.log('<-------------->');
+
 
 
 // 6 faqat name chiqarish
